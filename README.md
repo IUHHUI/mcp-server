@@ -139,7 +139,7 @@ To use the FIU MCP Server, you need to have a Variflight API key. You can get it
 {
     "mcpServers": {
         "szfiuToolkit": {
-            "description": "szfiu工具",
+            "description": "FIU检索证券代码服务",
             "transport": "streamable_http",
             "url": "https://mcp.szfiu.com/toolkit/"
         }
@@ -150,8 +150,9 @@ To use the FIU MCP Server, you need to have a Variflight API key. You can get it
 里面有检索证券代码的工具.
 
 ## Usage
-常用json配置如下:
 
+### 标准json配置:
+#### 传输方式: streamable http
 ``` json
 {
     "mcpServers": {
@@ -196,6 +197,64 @@ To use the FIU MCP Server, you need to have a Variflight API key. You can get it
             "headers": {
                 "Authorization": "Bearer {api_key}"
             }
+        },
+        "szfiuToolkit": {
+            "transport": "streamable_http",
+            "url": "https://mcp.szfiu.com/toolkit/"
+        }
+    }
+}
+```
+
+#### 传输方式: sse
+``` json
+{
+    "mcpServers": {
+        "stockHkF10SSE": {
+            "transport": "streamable_http",
+            "url": "https://mcp.szfiu.com/sse/stock_hk_f10/",
+            "headers": {
+                "Authorization": "Bearer {api_key}"
+            }
+        },
+        "stockUsF10SSE": {
+            "transport": "streamable_http",
+            "url": "https://mcp.szfiu.com/sse/stock_us_f10/",
+            "headers": {
+                "Authorization": "Bearer {api_key}"
+            }
+        },
+        "stockCnF10SSE": {
+            "transport": "streamable_http",
+            "url": "https://mcp.szfiu.com/sse/stock_cn_f10/",
+            "headers": {
+                "Authorization": "Bearer {api_key}"
+            }
+        },
+        "stockHkSdkSSE": {
+            "transport": "streamable_http",
+            "url": "https://mcp.szfiu.com/sse/stock_hk_sdk/",
+            "headers": {
+                "Authorization": "Bearer {api_key}"
+            }
+        },
+        "stockUsSdkSSE": {
+            "transport": "streamable_http",
+            "url": "https://mcp.szfiu.com/sse/stock_us_sdk/",
+            "headers": {
+                "Authorization": "Bearer {api_key}"
+            }
+        },
+        "stockCnSdkSSE": {
+            "transport": "streamable_http",
+            "url": "https://mcp.szfiu.com/sse/stock_cn_sdk/",
+            "headers": {
+                "Authorization": "Bearer {api_key}"
+            }
+        },
+        "szfiuToolkitSSE": {
+            "transport": "streamable_http",
+            "url": "https://mcp.szfiu.com/sse/toolkit/"
         }
     }
 }
@@ -203,57 +262,12 @@ To use the FIU MCP Server, you need to have a Variflight API key. You can get it
 
 ### 在cherry-studio中使用
 1. 手动添加
-![手动添加方式](./pic/cherry-studio-add-mcp.png)   
+
+   - ![手动添加方式](./pic/cherry-studio-add-mcp.png)   
 
 2. json导入方式.
-``` json
-{
-    "mcpServers": {
-        "stockHkF10": {
-            "type": "streamableHttp",
-            "baseUrl": "https://mcp.szfiu.com/stock_hk_f10/",
-            "headers": {
-                "Authorization": "Bearer {api_key}"
-            }
-        },
-        "stockUsF10": {
-            "type": "streamableHttp",
-            "url": "https://mcp.szfiu.com/stock_us_f10/",
-            "headers": {
-                "Authorization": "Bearer {api_key}"
-            }
-        },
-        "stockCnF10": {
-            "type": "streamableHttp",
-            "baseUrl": "https://mcp.szfiu.com/stock_cn_f10/",
-            "headers": {
-                "Authorization": "Bearer {api_key}"
-            }
-        },
-        "stockHkSdk": {
-            "type": "streamableHttp",
-            "baseUrl": "https://mcp.szfiu.com/stock_hk_sdk/",
-            "headers": {
-                "Authorization": "Bearer {api_key}"
-            }
-        },
-        "stockUsSdk": {
-            "type": "streamableHttp",
-            "baseUrl": "https://mcp.szfiu.com/stock_us_sdk/",
-            "headers": {
-                "Authorization": "Bearer {api_key}"
-            }
-        },
-        "stockCnSdk": {
-            "type": "streamableHttp",
-            "baseUrl": "https://mcp.szfiu.com/stock_cn_sdk/",
-            "headers": {
-                "Authorization": "Bearer {api_key}"
-            }
-        }
-    }
-}
-```
+
+   - [cherry-studio 通过json配置导入服务](./Cherry-Studio.md)
 
 ## 智能助手
 
@@ -270,3 +284,6 @@ system prompt:
 1. 填写配置, 注意url 需要 '/' 结尾;
 2. api_key 需要替换成自己的;
 3. 在工具中启用想要工具;
+4. 工具参数需要证券代码, 证券代码可以使用fiu检索证券代码查询;
+5. 大模型的时间可能是过去时间例如2023年, 建议增加一个[time服务](https://github.com/modelcontextprotocol/servers/tree/main/src/time), 让大模型model 获取当前时间, 并且将时间作为参数传递给工具;
+   - ![](./pic/time-mcp-server.png)

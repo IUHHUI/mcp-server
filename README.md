@@ -3,6 +3,36 @@ A Model Context Protocol (MCP) server implementation for FIU AI services.
 
 深圳市融聚汇信息科技有限公司，提供全球金融市场行情数据，同时一站式提供上市公司基本面信息、新闻舆情，帮助深入研究、跟踪各类投资标的动态，以及进行指标分析和量化策略回测。
 
+## cherry-studio使用效果
+
+配置助手提示词
+
+![](./演示效果/提示词样例.png)
+
+### A股效果
+#### 启动A股MCP
+![](./演示效果/A股-启动MCP.png)
+
+#### A股演示
+![](./演示效果/A股-贵州茅台怎么样.png)
+
+
+### 港股效果
+#### 启动港股MCP
+
+![](./演示效果/港股-启动MCP.png)
+
+#### 港股演示
+![](./演示效果/港股-腾讯怎么样.png)
+
+### 美股效果
+#### 启动美股MCP
+
+![](./演示效果/美股-启动MCP.png)
+
+#### 美股演示
+![](./演示效果/美股-查询苹果公司利润表.png)
+
 ## FIU MCP API Key
 To use the FIU MCP Server, you need to have a Variflight API key. You can get it from [here](https://mcp.szfiu.com/auth/login).
 
@@ -273,12 +303,17 @@ To use the FIU MCP Server, you need to have a Variflight API key. You can get it
 
 system prompt:
 ``` shell
-你是金融助手 - 查询数据前, 请先使用工具确认证券代码 - 使用工具查询实时数据 分析用户问题:
+你是金融助手
+- 今天是20250909
+- 查询数据前, 请先使用工具确认证券代码
+- 使用工具查询实时数据 分析用户问题:
 ```
 
 效果:
 
-![](./pic/usage_1.png)
+![详细分析贵州茅台](./演示效果/A股-详细分析贵州茅台600519.SH.png)
+
+![腾讯控股利润情况](./pic/usage_1.png)
 
 ## note
 1. 填写配置, 注意url 需要 '/' 结尾;

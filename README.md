@@ -11,15 +11,12 @@ A Model Context Protocol (MCP) server implementation for FIU AI services.
  
 ### 效果(演示钉钉机器人+openclaw使用mcp的情况)
 ![](./演示效果/openclaw/openclaw_fiu_mcp_list.jpg)
-
 ![](./演示效果/openclaw/openclaw_fiu_mcp_q1.jpg)
 
 ![](./演示效果/openclaw/openclaw_fiu_mcp_q2_1.jpg)
-
 ![](./演示效果/openclaw/openclaw_fiu_mcp_q2_2.jpg)
 
 ![](./演示效果/openclaw/openclaw_fiu_mcp_q2_3.jpg)
-
 ![](./演示效果/openclaw/openclaw_fiu_mcp_q2_4.jpg)
 
 ## cherry-studio使用效果

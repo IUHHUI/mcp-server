@@ -3,6 +3,7 @@ A Model Context Protocol (MCP) server implementation for FIU AI services.
 
 深圳市融聚汇信息科技有限公司，提供全球金融市场行情数据，同时一站式提供上市公司基本面信息、新闻舆情，帮助深入研究、跟踪各类投资标的动态，以及进行指标分析和量化策略回测。
 
+
 ## Openclaw使用效果
 1. 让openclaw 安装 find-skills;
 2. 和openclaw说: "如何给你配置新的mcp 工具,我有一些股票mcp工具?";
@@ -10,10 +11,15 @@ A Model Context Protocol (MCP) server implementation for FIU AI services.
  
 ### 效果(演示钉钉机器人+openclaw使用mcp的情况)
 ![](./演示效果/openclaw/openclaw_fiu_mcp_list.jpg)
+
 ![](./演示效果/openclaw/openclaw_fiu_mcp_q1.jpg)
+
 ![](./演示效果/openclaw/openclaw_fiu_mcp_q2_1.jpg)
+
 ![](./演示效果/openclaw/openclaw_fiu_mcp_q2_2.jpg)
+
 ![](./演示效果/openclaw/openclaw_fiu_mcp_q2_3.jpg)
+
 ![](./演示效果/openclaw/openclaw_fiu_mcp_q2_4.jpg)
 
 ## cherry-studio使用效果
@@ -46,7 +52,9 @@ A Model Context Protocol (MCP) server implementation for FIU AI services.
 #### 美股演示
 ![](./演示效果/美股-查询苹果公司利润表.png)
 
-## FIU MCP API Key
+## 免费获取 API Key
+申请即可使用
+
 To use the FIU MCP Server, you need to have a Variflight API key. You can get it from [here](https://mcp.szfiu.com/auth/login).
 
 ![](./pic/szfiu-mcp-jwt-index.png)
@@ -328,7 +336,7 @@ system prompt:
 
 ![腾讯控股利润情况](./pic/usage_1.png)
 
-## note
+## 注意事项
 1. 填写配置, 注意url 需要 '/' 结尾;
 2. api_key 需要替换成自己的;
 3. 在工具中启用想要工具;

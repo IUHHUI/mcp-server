@@ -17,7 +17,7 @@
     "mcpServers": {
         "stockHkF10": {
             "type": "streamableHttp",
-            "url": "https://mcp.szfiu.com/stock_hk_f10/",
+            "url": "https://ai.szfiu.com/api/mcp/stock_hk_f10/",
             "description": "港股市场F10数据",
             "provider": "SZFIU",
             "providerUrl": "https://github.com/fiu-ai/mcp-server",
@@ -32,7 +32,7 @@
     "mcpServers": {
         "stockUSF10": {
             "type": "streamableHttp",
-            "url": "https://mcp.szfiu.com/stock_us_f10/",
+            "url": "https://ai.szfiu.com/api/mcp/stock_us_f10/",
             "description": "美股市场F10数据",
             "provider": "SZFIU",
             "providerUrl": "https://github.com/fiu-ai/mcp-server",
@@ -47,7 +47,7 @@
     "mcpServers": {
         "stockCNF10": {
             "type": "streamableHttp",
-            "url": "https://mcp.szfiu.com/stock_cn_f10/",
+            "url": "https://ai.szfiu.com/api/mcp/stock_cn_f10/",
             "description": "A股市场F10数据",
             "provider": "SZFIU",
             "providerUrl": "https://github.com/fiu-ai/mcp-server",
@@ -62,7 +62,7 @@
     "mcpServers": {
         "stockHkSdk": {
             "type": "streamableHttp",
-            "url": "https://mcp.szfiu.com/stock_hk_sdk/",
+            "url": "https://ai.szfiu.com/api/mcp/stock_hk_sdk/",
             "description": "港股市场SDK数据",
             "provider": "SZFIU",
             "providerUrl": "https://github.com/fiu-ai/mcp-server",
@@ -77,7 +77,7 @@
     "mcpServers": {
         "stockUSSdk": {
             "type": "streamableHttp",
-            "url": "https://mcp.szfiu.com/stock_us_sdk/",
+            "url": "https://ai.szfiu.com/api/mcp/stock_us_sdk/",
             "description": "美股市场SDK数据",
             "provider": "SZFIU",
             "providerUrl": "https://github.com/fiu-ai/mcp-server",
@@ -92,7 +92,7 @@
     "mcpServers": {
         "stockCNSdk": {
             "type": "streamableHttp",
-            "url": "https://mcp.szfiu.com/stock_cn_sdk/",
+            "url": "https://ai.szfiu.com/api/mcp/stock_cn_sdk/",
             "description": "A股市场SDK数据",
             "provider": "SZFIU",
             "providerUrl": "https://github.com/fiu-ai/mcp-server",
@@ -107,7 +107,7 @@
     "mcpServers": {
         "fiuToolkit": {
             "type": "streamableHttp",
-            "url": "https://mcp.szfiu.com/toolkit/",
+            "url": "https://ai.szfiu.com/api/mcp/toolkit/",
             "description": "FIU检索证券代码服务",
             "provider": "SZFIU",
             "providerUrl": "https://github.com/fiu-ai/mcp-server",
@@ -123,7 +123,7 @@
     "mcpServers": {
         "stockHkF10SSE": {
             "type": "sse",
-            "url": "https://mcp.szfiu.com/sse/stock_hk_f10/",
+            "url": "https://ai.szfiu.com/api/mcp/sse/stock_hk_f10/",
             "description": "港股市场F10数据",
             "provider": "SZFIU",
             "providerUrl": "https://github.com/fiu-ai/mcp-server",
@@ -138,7 +138,7 @@
     "mcpServers": {
         "stockUSF10SSE": {
             "type": "sse",
-            "url": "https://mcp.szfiu.com/sse/stock_us_f10/",
+            "url": "https://ai.szfiu.com/api/mcp/sse/stock_us_f10/",
             "description": "美股市场F10数据",
             "provider": "SZFIU",
             "providerUrl": "https://github.com/fiu-ai/mcp-server",
@@ -153,7 +153,7 @@
     "mcpServers": {
         "stockCNF10SSE": {
             "type": "sse",
-            "url": "https://mcp.szfiu.com/sse/stock_cn_f10/",
+            "url": "https://ai.szfiu.com/api/mcp/sse/stock_cn_f10/",
             "description": "A股市场F10数据",
             "provider": "SZFIU",
             "providerUrl": "https://github.com/fiu-ai/mcp-server",
@@ -168,7 +168,7 @@
     "mcpServers": {
         "stockHkSdkSSE": {
             "type": "sse",
-            "url": "https://mcp.szfiu.com/sse/stock_hk_sdk/",
+            "url": "https://ai.szfiu.com/api/mcp/sse/stock_hk_sdk/",
             "description": "港股市场SDK数据",
             "provider": "SZFIU",
             "providerUrl": "https://github.com/fiu-ai/mcp-server",
@@ -183,7 +183,7 @@
     "mcpServers": {
         "stockUSSdkSSE": {
             "type": "sse",
-            "url": "https://mcp.szfiu.com/sse/stock_us_sdk/",
+            "url": "https://ai.szfiu.com/api/mcp/sse/stock_us_sdk/",
             "description": "美股市场SDK数据",
             "provider": "SZFIU",
             "providerUrl": "https://github.com/fiu-ai/mcp-server",
@@ -198,7 +198,7 @@
     "mcpServers": {
         "stockCNSdkSSE": {
             "type": "sse",
-            "url": "https://mcp.szfiu.com/sse/stock_cn_sdk/",
+            "url": "https://ai.szfiu.com/api/mcp/sse/stock_cn_sdk/",
             "description": "A股市场SDK数据",
             "provider": "SZFIU",
             "providerUrl": "https://github.com/fiu-ai/mcp-server",
@@ -213,7 +213,7 @@
     "mcpServers": {
         "fiuToolkitSSE": {
             "type": "sse",
-            "url": "https://mcp.szfiu.com/sse/toolkit/",
+            "url": "https://ai.szfiu.com/api/mcp/sse/toolkit/",
             "description": "FIU检索证券代码服务",
             "provider": "SZFIU",
             "providerUrl": "https://github.com/fiu-ai/mcp-server",
